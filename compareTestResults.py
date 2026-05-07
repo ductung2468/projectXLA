@@ -16,7 +16,7 @@ def get_data(path):
 			name = tmp[0].strip()
 			values = tmp[1].strip().split("||")
 			values.sort()
-			values = "||".join(values)
+			values = "||".join(values).strip("|")
 			data[name] = values
 			print(f"{name} : {values}")
 	return data
