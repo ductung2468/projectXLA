@@ -24,7 +24,7 @@ def get_data(path):
 res_data = get_data(RES_PATH)
 out_data = get_data(OUT_PATH)
 
-total = len(res_data)
+total = len(out_data)
 count = 0
 
 for k, v in out_data.items():
